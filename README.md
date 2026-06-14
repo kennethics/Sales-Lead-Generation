@@ -177,7 +177,7 @@ Update the following fields before activating the workflow:
 
 📥 **Download the Workflow**
 
-➡️ [Sales Lead Gen Automation.json](./workflow/Sales%20Lead%20Gen%20Automation.json)
+➡️[Sales Lead Gen Automation.json](./workflow/Sales%20Lead%20Gen%20Automation.json)](https://raw.githubusercontent.com/kennethics/Sales-Lead-Generation/refs/heads/main/Sales%20Lead%20Gen%20Automation.json) 
 
 Import it directly into n8n and configure your credentials.
 
