@@ -1,173 +1,241 @@
-Sales Lead Gen Automation (n8n)
-AI-powered lead generation and personalized outreach workflow built with n8n that automatically discovers qualified prospects, enriches lead information, generates personalized emails, and sends outreach campaigns.
+# 🚀 Sales Lead Gen Automation (n8n)
 
-Business Problem
-Sales teams spend countless hours:
+AI-powered lead generation and outreach automation built with n8n, OpenAI, Perplexity, Phantombuster, and Gmail.
 
-Searching for qualified prospects
-Researching companies and decision-makers
-Personalizing outreach emails
-Managing lead databases
-Tracking outreach activity
+This workflow automatically discovers qualified prospects, enriches lead data, generates personalized outreach emails, and sends them at scale.
 
-This manual process slows pipeline growth and limits the number of high-quality prospects sales teams can engage.
+---
 
-This workflow automates the entire lead discovery and outreach process, allowing sales professionals to focus on conversations and closing deals instead of repetitive research tasks.
+## 📌 Business Problem
 
+Sales teams spend significant time on repetitive tasks such as:
+
+* Finding potential leads
+* Researching decision-makers
+* Collecting contact information
+* Writing personalized outreach emails
+* Tracking outreach activity
+
+These manual processes slow down pipeline generation and reduce overall sales productivity.
+
+This workflow automates the entire prospecting and outreach process, allowing sales professionals to focus on conversations, meetings, and closing deals.
+
+---
+
+## ⚙️ What This Workflow Does
+
+1. Runs automatically on a scheduled basis.
+2. Searches for companies and decision-makers matching your target criteria.
+3. Enriches lead information using AI and LinkedIn data.
+4. Filters and qualifies prospects.
+5. Generates personalized outreach emails for each lead.
+6. Sends emails automatically through Gmail.
+7. Stores lead and campaign data for reporting and future follow-ups.
+
+---
+
+## 🏗 Workflow Architecture
+
+```text
 Schedule Trigger
-        │
-        ▼
+       │
+       ▼
 Define Search Criteria
-        │
-        ▼
-Lead Generation Agent (GPT-5)
-        │
- ┌──────┼────────┬─────────┐
- ▼      ▼        ▼         ▼
-Perplexity  LinkedIn   HTTP   Data
-Search     Scraper    Request Storage
-        │
-        ▼
-Structured Lead Output
-        │
-        ▼
+       │
+       ▼
+AI Lead Generation Agent
+       │
+ ┌─────┼──────────┬──────────┐
+ ▼     ▼          ▼          ▼
+Perplexity   LinkedIn   HTTP Request
+ Search      Scraper     Enrichment
+       │
+       ▼
+Qualified Leads
+       │
+       ▼
 Extract Leads
-        │
-        ▼
+       │
+       ▼
 Loop Through Leads
-        │
-        ▼
-Personalized Email Generation
-        │
-        ▼
-Send Email (Gmail)
-        │
-        ▼
-Store Campaign Summary
+       │
+       ▼
+AI Email Generator
+       │
+       ▼
+Gmail Outreach
+       │
+       ▼
+Campaign Summary Storage
+```
 
+---
 
-Integrations Used
+## 🔌 Integrations Used
 
-OpenAI GPT-5
-
-Used for:
-
-Lead qualification
-Prospect analysis
-Personalized email creation
-Perplexity Search
-
-Used to:
-
-Discover companies
-Find relevant decision-makers
-Gather business intelligence
-Phantombuster
+### OpenAI
 
 Used for:
 
-LinkedIn profile enrichment
-Professional data extraction
-Gmail
+* Lead qualification
+* Lead analysis
+* Personalized email generation
+
+### Perplexity
 
 Used for:
 
-Sending personalized outreach emails
-HTTP Request
+* Company research
+* Prospect discovery
+* Market intelligence
+
+### Phantombuster
 
 Used for:
 
-External API calls
-Additional data enrichment
-n8n Data Tables
+* LinkedIn profile enrichment
+* Professional data extraction
+
+### Gmail
 
 Used for:
 
-Lead storage
-Campaign tracking
-Reporting
+* Automated email delivery
+* Personalized outreach campaigns
 
-Workflow Features
+### HTTP Request
 
-Automated Lead Discovery
+Used for:
 
-Searches for prospects based on:
+* Additional API integrations
+* Data enrichment
 
-Industry
-Job Title
-Location
-Company Size
-AI Lead Qualification
+### n8n Data Tables
 
-Filters and prioritizes prospects that best match target criteria.
+Used for:
 
-Personalized Outreach
+* Lead storage
+* Campaign tracking
+* Reporting
 
-Generates custom email copy for every lead using AI.
+---
 
-Automated Email Delivery
+## 📊 Expected Outcomes
 
-Sends personalized outreach directly from Gmail.
-
-Campaign Reporting
-
-Tracks:
-
-Number of leads found
-Emails sent
-Campaign completion status
-
-Expected Outcomes
-After implementation, users can expect:
-
-Increased Prospecting Efficiency
+### Faster Prospecting
 
 Reduce manual lead research by up to 80%.
 
-Faster Outreach
+### Better Lead Quality
 
-Automatically generate and send personalized emails at scale.
+AI qualification prioritizes high-fit prospects.
 
-Higher Lead Quality
+### Personalized Outreach at Scale
 
-AI-driven qualification helps prioritize high-fit prospects.
+Generate custom emails for every lead automatically.
 
-Consistent Pipeline Growth
+### Consistent Pipeline Growth
 
-Daily automated prospect discovery ensures a continuous flow of new opportunities.
+Discover new opportunities daily without manual effort.
 
-Centralized Lead Management
+### Improved Sales Productivity
 
-Store and track all leads and outreach activity in one workflow.
+Spend more time selling and less time researching.
 
-Prerequisites
-Before running this workflow, configure:
+---
 
-OpenAI API Credentials
-Perplexity API Credentials
-Gmail OAuth
-Phantombuster Account
-n8n Data Tables
+## 🛠 Prerequisites
 
-Replace all placeholder values:
-targetIndustry
-targetRole
-targetLocation
-companySize
-senderName
-dataTableId
+Before using this workflow, configure:
 
-Installation
-Download the workflow JSON.
-Open n8n.
-Click Import Workflow.
+* OpenAI API Credentials
+* Perplexity API Credentials
+* Gmail OAuth Credentials
+* Phantombuster Account
+* n8n Data Tables
+
+---
+
+## 🔧 Required Configuration
+
+Update the following fields before activating the workflow:
+
+| Field          | Example                |
+| -------------- | ---------------------- |
+| targetIndustry | Technology             |
+| targetRole     | VP of Sales            |
+| targetLocation | United States          |
+| companySize    | 50–500 Employees       |
+| senderName     | Your Name              |
+| dataTableId    | Your n8n Data Table ID |
+
+---
+
+## 📥 Installation
+
+### Step 1
+
+Download the workflow JSON file.
+
+### Step 2
+
+Open your n8n instance.
+
+### Step 3
+
+Navigate to:
+
+```
+Workflows → Import from File
+```
+
+### Step 4
+
 Select:
-Sales Lead Gen Automation.json
 
-License
+```
+Sales Lead Gen Automation.json
+```
+
+### Step 5
+
+Configure all required credentials.
+
+### Step 6
+
+Update the search criteria and sender details.
+
+### Step 7
+
+Activate the workflow.
+
+---
+
+## 📈 Example Use Cases
+
+* B2B Lead Generation
+* Agency Prospecting
+* SaaS Sales Outreach
+* Recruitment Lead Sourcing
+* Consulting Client Acquisition
+* Account-Based Marketing (ABM)
+
+---
+
+## 🔒 Notes
+
+* Always comply with email marketing regulations in your region.
+* Review generated emails before large-scale campaigns.
+* Ensure LinkedIn and data collection activities comply with platform policies and local regulations.
+
+---
+
+## 📄 License
 
 MIT License
 
-Author
-Kenneth Soriano
-AI Automation Specialist | Sales Operations | Workflow Automation | n8n Builder
+---
+
+## 👨‍💻 Author
+
+Built with n8n, AI, and workflow automation to streamline modern sales prospecting and outreach.
