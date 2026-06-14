@@ -173,9 +173,13 @@ Update the following fields before activating the workflow:
 
 ## 📥 Installation
 
-### Step 1
+## Quick Start
 
-Download the workflow JSON file.
+📥 **Download the Workflow**
+
+➡️ [Sales Lead Gen Automation.json](./workflow/Sales%20Lead%20Gen%20Automation.json)
+
+Import it directly into n8n and configure your credentials.
 
 ### Step 2
 
