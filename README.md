@@ -173,39 +173,63 @@ Update the following fields before activating the workflow:
 
 ## 📥 Installation
 
-## Quick Start
+## 📥 Download & Install
 
-👉 **Download the workflow JSON file**
+### Step 1: Download the Workflow
 
-[📥 Download Sales Lead Gen Automation](https://raw.githubusercontent.com/kennethics/Sales-Lead-Generation/main/Sales%20Lead%20Gen%20Automation.json)
+Click below to download the workflow JSON file:
 
-Then import it directly into n8n via:
+### 🚀 Download Workflow
 
-Workflows → Import from File
+**[📥 Sales Lead Gen Automation.json](https://raw.githubusercontent.com/kennethics/Sales-Lead-Generation/main/Sales%20Lead%20Gen%20Automation.json)**
 
-### Step 2
+---
 
-Open your n8n instance.
+### Step 2: Import into n8n
 
-### Step 3
+1. Open your n8n instance
+2. Navigate to **Workflows**
+3. Click **Import from File**
+4. Select the downloaded `Sales Lead Gen Automation.json` file
 
-Navigate to:
+---
 
-```
-Workflows → Import from File
-```
+### Step 3: Configure Credentials
 
-### Step 4
+Before activating the workflow, connect:
 
-Select:
+* OpenAI API
+* Perplexity API
+* Gmail OAuth
+* Phantombuster
+* n8n Data Tables
 
-```
-Sales Lead Gen Automation.json
-```
+---
 
-### Step 5
+### Step 4: Update Search Criteria
 
-Configure all required credentials.
+Customize the following values:
+
+| Field          | Example          |
+| -------------- | ---------------- |
+| targetIndustry | Technology       |
+| targetRole     | VP of Sales      |
+| targetLocation | United States    |
+| companySize    | 50-500 Employees |
+| senderName     | Your Name        |
+
+---
+
+### Step 5: Activate Workflow
+
+Once credentials and settings are configured:
+
+1. Save the workflow
+2. Toggle **Active**
+3. The workflow will automatically begin prospecting and outreach based on the configured schedule
+
+✅ You're now running an AI-powered lead generation and outreach system.
+
 
 ### Step 6
 
