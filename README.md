@@ -181,7 +181,7 @@ Click below to download the workflow JSON file:
 
 ### 🚀 Download Workflow
 
-**[📥 Sales Lead Gen Automation.json](https://raw.githubusercontent.com/kennethics/Sales-Lead-Generation/main/Sales%20Lead%20Gen%20Automation.json)**
+[📥 Download Latest Release](https://github.com/kennethics/Sales-Lead-Generation/releases/latest) 
 
 ---
 
