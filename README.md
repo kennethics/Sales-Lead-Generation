@@ -179,9 +179,9 @@ Update the following fields before activating the workflow:
 
 Click below to download the workflow JSON file:
 
-### 🚀 Download Workflow
+## 📥 Download Workflow
 
-[📥 Download Latest Release](https://github.com/kennethics/Sales-Lead-Generation/releases/latest) 
+[🚀 Download Latest Release](https://github.com/kennethics/Sales-Lead-Generation/releases/latest)
 
 ---
 
