@@ -1,4 +1,4 @@
-# 🚀 Sales Lead Gen Automation (n8n)
+# 🚀 Agentic Sales Lead Gen Automation (n8n)
 
 AI-powered lead generation and outreach automation built with n8n, OpenAI, Perplexity, Phantombuster, and Gmail.
 
